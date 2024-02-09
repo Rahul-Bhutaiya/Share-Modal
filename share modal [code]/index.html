@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Modal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="wrapper">
+
+        <!-- two balls -->
+        <div id="ball1"></div>
+        <div id="ball2"></div>
+
+        <!-- person data container -->
+        <div id="person-container">
+            <img src="A19I3398.jpg">
+            <h1>Rahul Bhutaiya</h1>
+            <h3 id="description">FrontEnd Engineer</h2>
+            <div id="btn-container">
+                <button btn1>
+                    <i class="fa-solid fa-share"></i>
+                    Share My Profile
+                </button>
+                <button id="btn2">
+                    Follow Me
+                </button>
+            </div>
+        </div>
+
+        <!-- haze-effect -->
+        <div onclick="closeModal()" class="haze-effect" haze-effect></div>
+
+        <!-- share-modal-container -->
+        <div class="share-modal-container" share-modal-container>
+            <div id="head">
+                <h2 id="heading-text">
+                    Share My Profile
+                </h2>
+                <button onclick="closeModal()" close-modal><i class="fa-solid fa-x"></i></button>
+            </div>
+            <p id="share-modal-description">Share this via</p>
+            <div id="icon-container">
+                <div id="github"><i class="fa-brands fa-github"></i></div>
+                <div id="instagram"><i class="fa-brands fa-instagram"></i></div>
+                <div id="twitter"><i class="fa-brands fa-x-twitter"></i></div>
+                <div id="linkedIn"><i class="fa-brands fa-linkedin-in"></i></div>
+                <div id="discord"><i class="fa-brands fa-discord"></i></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+</body>
+</html>
